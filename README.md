@@ -9,7 +9,7 @@ Welcome to my central Data Science Portfolio Hub. This repository showcases a co
 ## 🧭 Live Interactive Dashboard
 Instead of navigating static code structures, you can explore every single project, view dynamic data visualizations, and download optimized datasets directly via my interactive **Streamlit Web Application**:
 
-👉 **[Insert Your Streamlit App Live Link Here]**
+👉 **[Click Here to Explore My Live Portfolio App](https://datascienceportfolio.streamlit.app/)**
 
 ---
 
