@@ -48,12 +48,3 @@ Data_Science_Portfolio/
 ├── train.csv                      # Historical Titanic demographic tracking dataset
 ├── bank-full.csv                  # 45,211 row master consumer conversion database
 └── US_Accidents_March23.csv       # Chronological regional transit hazard file
-``` text
-
-## 🚀 Environment Setup & Deployment Lifecycle
-
-### 1. Initialize Local System Workspace
-Clone this repository directly into your local machine environment:
-```bash
-git clone [https://github.com/parthi-5/Data_Science_Portfolio.git](https://github.com/parthi-5/Data_Science_Portfolio.git)
-cd Data_Science_Portfolio
