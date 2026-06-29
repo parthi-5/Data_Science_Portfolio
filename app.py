@@ -7,7 +7,7 @@ from sklearn.tree import DecisionTreeClassifier
 
 st.set_page_config(page_title="My Data Science Portfolio", layout="wide")
 sns.set_theme(style="white")
-plt.rcParams['font.family'] = 'Questrial:https://googleapis.com'
+plt.rcParams['font.family'] = 'DejaVu Sans Mono'
 
 st.sidebar.title("Navigation Hub")
 page = st.sidebar.radio("Explore Analytics Hub:", [
@@ -51,7 +51,7 @@ elif page == "Case Study 1: Global Demographics":
         st.warning("Please verify 'API_SP.POP.TOTL_DS2_en_csv_v2_406129.csv' exists in your root folder path.")
 
 elif page == "Case Study 2: Titanic Survival EDA":
-    st.title("🚢 Case Study 2: Titanic Survival Exploratory Data Analysis")
+    st.title("Case Study 2: Titanic Survival Exploratory Data Analysis")
     st.write("Uncovering systematic data patterns relative to socioeconomic categories and passenger demographics.")
     
     try:
