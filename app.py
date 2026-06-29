@@ -7,9 +7,9 @@ from sklearn.tree import DecisionTreeClassifier
 
 st.set_page_config(page_title="My Data Science Portfolio", layout="wide")
 sns.set_theme(style="white")
-plt.rcParams['font.family'] = 'sans-serif'
+plt.rcParams['font.family'] = 'Questrial:https://googleapis.com'
 
-st.sidebar.title("🧭 Navigation Hub")
+st.sidebar.title("Navigation Hub")
 page = st.sidebar.radio("Explore Analytics Hub:", [
     "Portfolio Executive Summary", 
     "Case Study 1: Global Demographics", 
@@ -20,14 +20,14 @@ page = st.sidebar.radio("Explore Analytics Hub:", [
 
 
 if page == "Portfolio Executive Summary":
-    st.title("🚀 My Data Science Project Portfolio")
+    st.title("My Data Science Project Portfolio")
     st.write("Welcome! This central dashboard holds the analytical systems and machine learning tasks I engineered.")
     st.markdown("---")
-    st.subheader("💡 Portfolio Architecture")
+    st.subheader("Portfolio Architecture")
     st.write("Navigate through the sidebar to explore live interactive data renderings, visual insights, and exportable data segments for each specific case study.")
 
 elif page == "Case Study 1: Global Demographics":
-    st.title("📊 Case Study 1: Global Population Distribution")
+    st.title("Case Study 1: Global Population Distribution")
     st.write("Analyzing country distribution scales using modern logarithmic visualizations to eliminate massive regional skewing.")
     
     try:
@@ -76,13 +76,13 @@ elif page == "Case Study 2: Titanic Survival EDA":
         
         st.markdown("---")
         csv_data = df.to_csv(index=False).encode('utf-8')
-        st.download_button(label="📥 Download Cleaned Titanic Dataset (CSV)", data=csv_data, file_name="cleaned_titanic_passenger_data.csv", mime="text/csv")
+        st.download_button(label="Download Cleaned Titanic Dataset (CSV)", data=csv_data, file_name="cleaned_titanic_passenger_data.csv", mime="text/csv")
         
     except FileNotFoundError:
         st.warning("Please verify 'train.csv' is saved in your root directory folder.")
 
 elif page == "Pipeline 3: Purchase Behavior ML Model":
-    st.title("🎯 Pipeline 3: Consumer Purchase Prediction Pipeline")
+    st.title("Pipeline 3: Consumer Purchase Prediction Pipeline")
     st.write("Supervised tree classifier optimizing numeric customer matrices to forecast target purchase flags.")
     
     try:
@@ -109,13 +109,13 @@ elif page == "Pipeline 3: Purchase Behavior ML Model":
         st.markdown("---")
         csv_bank = X.copy()
         csv_bank['Target_Purchased'] = y
-        st.download_button(label="📥 Download Encoded Numeric Marketing Features (CSV)", data=csv_bank.to_csv(index=False).encode('utf-8'), file_name="cleaned_numeric_bank_marketing.csv", mime="text/csv")
+        st.download_button(label="Download Encoded Numeric Marketing Features (CSV)", data=csv_bank.to_csv(index=False).encode('utf-8'), file_name="cleaned_numeric_bank_marketing.csv", mime="text/csv")
         
     except FileNotFoundError:
         st.warning("Please verify 'bank-full.csv' is present inside the workspace directory folder.")
 
 elif page == "Pipeline 4: US Traffic Safety Analytics":
-    st.title("🚗 Pipeline 4: US Traffic Accident Pattern Analytics")
+    st.title("Pipeline 4: US Traffic Accident Pattern Analytics")
     st.write("Evaluating continuous environmental lighting and time patterns across localized traffic accident data layers.")
     
     try:
@@ -140,7 +140,7 @@ elif page == "Pipeline 4: US Traffic Safety Analytics":
         st.pyplot(fig2)
         
         st.markdown("---")
-        st.download_button(label="📥 Download Processed Accident Matrix Data (CSV)", data=df.to_csv(index=False).encode('utf-8'), file_name="processed_traffic_accidents.csv", mime="text/csv")
+        st.download_button(label="Download Processed Accident Matrix Data (CSV)", data=df.to_csv(index=False).encode('utf-8'), file_name="processed_traffic_accidents.csv", mime="text/csv")
         
     except FileNotFoundError:
         st.warning("Please run your data generator script to initialize 'US_Accidents_March23.csv' inside this directory.")
